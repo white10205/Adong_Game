@@ -19,15 +19,15 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: 123456
-    url: jdbc:mysql://127.0.0.1:3306/yupao?characterEncoding=UTF-8
+    password: 1020572432Srd!
+    url: jdbc:mysql://sh-cynosdbmysql-grp-i7v3ka9g.sql.tencentcdb.com:26060/yupao?characterEncoding=UTF-8
   # session 失效时间
   session:
     timeout: 86400
     store-type: redis
   redis:
     port: 6379
-    host: localhost
+    host: 8.130.160.94
     database: 0
     password: 123456
 mybatis-plus:
