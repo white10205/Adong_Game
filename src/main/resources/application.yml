@@ -8,6 +8,7 @@ server:
         secure: true
         max-age: 2592000
         same-site: none
+        domain: 8.130.160.94
 spring:
   profiles:
     active: dev
