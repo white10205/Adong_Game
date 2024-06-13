@@ -156,6 +156,9 @@ public class UserController {
 
         log.info("首页推荐查询,{},{}",pageSize,pageNum);
         User loginUser = userService.getLoginUser(request);
+        if(loginUser == null ){
+            throw new BusinessException(ErrorCode.NOT_LOGIN);
+        }
         /*String redisKey = RedisConstant.USER_RECOMMEND_KEY + ":" + loginUser.getId();
 
         //如果有缓存，直接读缓存
