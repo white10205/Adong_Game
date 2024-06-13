@@ -5,9 +5,9 @@ server:
     context-path: /api
     session:
       cookie:
-        sameSite: none
         secure: true
         max-age: 2592000
+        same-site: none
 spring:
   profiles:
     active: dev
